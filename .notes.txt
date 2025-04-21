@@ -1,0 +1,12 @@
+Deploy with: npx hardhat run scripts/deploy.js --network arbitrumSepolia
+
+Block Explorer: https://sepolia.arbiscan.io/
+
+Faucets: Official Arbitrum Sepolia Faucet:
+URL: https://sepolia-faucet.arbitrum.io/
+This is the official faucet maintained by the Arbitrum team
+Alchemy Faucet (recommended):
+URL: https://www.alchemy.com/faucets/arbitrum-sepolia
+Since you're already using Alchemy as your RPC provider, this might be convenient
+QuickNode Faucet:
+URL: https://faucet.quicknode.com/arbitrum/sepolia
