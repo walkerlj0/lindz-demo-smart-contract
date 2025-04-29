@@ -19,5 +19,9 @@ if [[ "$1" == "-h" || "$1" == "--help" ]]; then
   exit 0
 fi
 
+# Export variables to be used by the script
+export CONTRACT_ADDRESS="$CONTRACT_ADDRESS"
+export NEW_MESSAGE="$NEW_MESSAGE"
+
 # Run the update script using the run-hardhat.sh script
-./run-hardhat.sh run scripts/update-contract.js --network arbitrumSepolia "$CONTRACT_ADDRESS" "$NEW_MESSAGE"
+./run-hardhat.sh run scripts/update-contract.js --network arbitrumSepolia

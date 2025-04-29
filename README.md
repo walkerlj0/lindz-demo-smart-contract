@@ -1,10 +1,21 @@
 # Smart Contract Demo on Arbitrum Sepolia
 
-A simple HelloWorld smart contract demonstration deployed on Arbitrum Sepolia testnet.
+A simple smart contract demonstration deployed on Arbitrum Sepolia testnet.
 
 ## Project Overview
 
-This project contains a simple HelloWorld smart contract that stores a message which can be updated. The contract is deployed on the Arbitrum Sepolia testnet.
+This project contains a simple smart contract that is deployed on the Arbitrum Sepolia testnet.
+
+### Explore Smart Contracts
+See the various deployments on https://sepolia.arbiscan.io/
+Creator Wallet Address: 0xdb4Bf427b1546c462EF83620e2d2AaF8c781c5eB
+
+#### Contracts
+* 0xd4fe0aDEf0a62398b629Da0620E079F0D487bBd2
+* 0x7675DA30Bcc226DFC4bbCE43bCAA441C88934d73
+* 0x82b7896234Dcc5A4256657D1A9efa5879D8e5Ff6
+
+View contracts at (https://sepolia.etherscan.io/)[https://sepolia.etherscan.io/]
 
 ## Features
 

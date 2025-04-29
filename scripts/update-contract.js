@@ -1,10 +1,10 @@
 // Script to update the message in the deployed HelloWorld contract
 async function main() {
-  // Get the contract address from command line arguments or use a default
-  const contractAddress = process.argv[2] || "0xd4fe0aDEf0a62398b629Da0620E079F0D487bBd2";
+  // Get the contract address and message from environment variables or use defaults
+  const contractAddress = process.env.CONTRACT_ADDRESS || "0xd4fe0aDEf0a62398b629Da0620E079F0D487bBd2";
   
-  // Get the new message from command line arguments or use a default
-  const newMessage = process.argv[3] || "Updated Hello World!";
+  // Get the new message from environment variables or use a default
+  const newMessage = process.env.NEW_MESSAGE || "Updated Hello World!";
   
   console.log(`Updating contract at address ${contractAddress} with message: "${newMessage}"`);
   
