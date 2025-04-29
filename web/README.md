@@ -31,20 +31,33 @@ This web application demonstrates how to implement authentication with MetaMask 
 
 ### Run
 
-To serve the web application locally, you can use any simple HTTP server:
+To serve the web application locally using the included Express server:
+
+```bash
+# Navigate to the web directory
+cd web
+
+# Install dependencies (first time only)
+npm install
+
+# Start the server
+npm start
+```
+
+For development with auto-reload:
+```bash
+npm run dev
+```
+
+Then open your browser to http://localhost:3000.
+
+Alternatively, you can use any simple HTTP server:
 
 ```bash
 # Using Python
 cd web
 python -m http.server 8000
-
-# Or using Node.js http-server
-npm install -g http-server
-cd web
-http-server
 ```
-
-Then open your browser to http://localhost:8000 (or the appropriate port).
 
 ## How It Works
 

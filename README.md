@@ -20,8 +20,8 @@ View contracts at (https://sepolia.arbiscan.io/address/0x82b7896234Dcc5A4256657D
 ## Features
 
 - HelloWorld smart contract with message storage and update functionality
-- Deployment script for Arbitrum Sepolia
-- Update script to modify the message in the deployed contract
+- Deployment scripts for Arbitrum Sepolia
+- Update scripts to modify the message in the deployed contract
 - Balance checking utility
 
 ## Prerequisites
@@ -63,6 +63,64 @@ View contracts at (https://sepolia.arbiscan.io/address/0x82b7896234Dcc5A4256657D
 ```bash
 ./run-hardhat.sh run scripts/check-balance.js --network arbitrumSepolia
 ```
+
+## MetaMask Authentication for Smart Contracts on Arbitrum Sepolia
+
+Users are able to sign up and authenticate with MetaMask on Arbitrum Sepolia. The project includes:
+
+### 1. Enhanced Smart Contract
+
+`AuthenticatedHelloWorld.sol` extends the original HelloWorld contract with:
+- User registration with usernames
+- MetaMask signature-based authentication
+- Nonce system to prevent replay attacks
+- Events for tracking authentication activities
+
+### 2. Deployment Tools
+
+- `scripts/deploy-authenticated.js`: Hardhat deployment script for the new contract
+- `deploy-authenticated.sh`: Bash script to easily deploy the contract to Arbitrum Sepolia
+
+### 3. Web Application
+
+See the `/web` directory for a complete web application with:
+- Connect with MetaMask
+- Register with a username
+- Authenticate using cryptographic signatures
+- Update and view the contract message
+- Transaction history tracking
+
+### How to Use MetaMask Authentication
+
+1. **Deploy the Contract**
+   ```bash
+   ./deploy-authenticated.sh
+   ```
+   This will deploy the AuthenticatedHelloWorld contract to Arbitrum Sepolia and provide you with the contract address.
+
+2. **Update the Web App**
+   ```bash
+   ./update-web-contract-address.sh YOUR_CONTRACT_ADDRESS
+   ```
+   This will update the web application with your deployed contract address.
+
+3. **Serve the Web Application**
+   ```bash
+   cd web
+   npm install
+   npm start
+   ```
+   Then open http://localhost:3000 in your browser to interact with your contract.
+
+4. **Authenticate with MetaMask**
+   - Connect your MetaMask wallet to the application
+   - Register with a username
+   - Authenticate by signing a message with your wallet
+   - Update the contract message and perform other actions
+
+This implementation provides a secure, blockchain-based authentication system that leverages the cryptographic capabilities of MetaMask without requiring users to share their private keys or pay for gas on every login (only registration and initial authentication require gas).
+
+
 
 ## Security Notes
 
