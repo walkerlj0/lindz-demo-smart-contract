@@ -51,14 +51,6 @@ npm run dev
 
 Then open your browser to http://localhost:3000.
 
-Alternatively, you can use any simple HTTP server:
-
-```bash
-# Using Python
-cd web
-python -m http.server 8000
-```
-
 ## How It Works
 
 ### Authentication Flow

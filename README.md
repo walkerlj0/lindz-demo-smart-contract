@@ -17,6 +17,9 @@ Creator Wallet Address: 0xdb4Bf427b1546c462EF83620e2d2AaF8c781c5eB
 
 View contracts at (https://sepolia.arbiscan.io/address/0x82b7896234Dcc5A4256657D1A9efa5879D8e5Ff6)[https://sepolia.arbiscan.io/address/0x82b7896234Dcc5A4256657D1A9efa5879D8e5Ff6]
 
+#### Authentication Contracts
+* 0x86475277CE05B5E217E695FA585468219905F864
+
 ## Features
 
 - HelloWorld smart contract with message storage and update functionality
@@ -83,12 +86,14 @@ Users are able to sign up and authenticate with MetaMask on Arbitrum Sepolia. Th
 
 ### 3. Web Application
 
-See the `/web` directory for a complete web application with:
+See the `/web` directory for a complete web application with funcctionality to:
 - Connect with MetaMask
 - Register with a username
 - Authenticate using cryptographic signatures
 - Update and view the contract message
 - Transaction history tracking
+
+The [`web/README.md` file has instructions](web/README.md) to spin up local instance of webui for interacting with authentication smart contract
 
 ### How to Use MetaMask Authentication
 

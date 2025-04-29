@@ -1,4 +1,4 @@
-#!/bin/bash
+git s#!/bin/bash
 
 # Check if the contract address parameter is provided
 if [ -z "$1" ]; then
@@ -34,8 +34,9 @@ sed -i '' "s|const CONTRACT_ADDRESS = \"0x[a-fA-F0-9]*\"|const CONTRACT_ADDRESS 
 echo "✅ Updated web app with contract address: $CONTRACT_ADDRESS"
 echo "You can now serve the web application to interact with your deployed contract."
 echo ""
-echo "To start a simple HTTP server:"
+echo "To start the Node.js Express server:"
 echo "cd web"
-echo "python -m http.server 8000"
+echo "npm install    # Only needed the first time"
+echo "npm start"
 echo ""
-echo "Then open http://localhost:8000 in your browser."
+echo "Then open http://localhost:3000 in your browser."

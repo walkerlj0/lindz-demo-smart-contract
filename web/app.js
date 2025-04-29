@@ -19,7 +19,7 @@ const CONTRACT_ABI = [
 ];
 
 // Update this after deployment
-const CONTRACT_ADDRESS = "0x0000000000000000000000000000000000000000"; // Replace with your deployed contract address
+const CONTRACT_ADDRESS = "0x86475277CE05B5E217E695FA585468219905F864"; // Replace with your deployed contract address
 const CHAIN_ID = 421614; // Arbitrum Sepolia Chain ID
 
 // Main app
