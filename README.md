@@ -15,7 +15,7 @@ Creator Wallet Address: 0xdb4Bf427b1546c462EF83620e2d2AaF8c781c5eB
 * 0x7675DA30Bcc226DFC4bbCE43bCAA441C88934d73
 * 0x82b7896234Dcc5A4256657D1A9efa5879D8e5Ff6
 
-View contracts at (https://sepolia.etherscan.io/)[https://sepolia.etherscan.io/]
+View contracts at (https://sepolia.arbiscan.io/address/0x82b7896234Dcc5A4256657D1A9efa5879D8e5Ff6)[https://sepolia.arbiscan.io/address/0x82b7896234Dcc5A4256657D1A9efa5879D8e5Ff6]
 
 ## Features
 
